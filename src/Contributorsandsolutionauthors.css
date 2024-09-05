@@ -1,0 +1,128 @@
+.contributorsandsolutionauthors {
+    /* width: 1440px; */
+    height: 552px;
+    padding: 60px 80px 60px 80px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 32px;
+    opacity: 0px;
+  
+
+}
+
+.contributorsandsolutionauthors-card {
+    width: 628px;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    opacity: 0px;
+
+
+
+}
+
+.contributorsandsolutionauthors-header {
+    width: 628px;
+    height: 48px;
+    gap: 24px;
+    display: flex;
+    opacity: 0px;
+
+    font-family: Effra;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color: #252525;
+
+
+
+}
+
+.contributorsandsolutionauthors-body {
+    width: 628px;
+    height: 344px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    gap: 24px;
+    opacity: 0px;
+    /* background-color: wheat; */
+
+}
+
+.contributorsandsolutionauthors-body-tiles {
+    width: 614px;
+    height: 296px;
+    display: flex;
+    gap: 16px;
+    opacity: 0px;
+
+
+
+}
+
+.contributorsandsolutionauthors-body-tiles-left,
+.contributorsandsolutionauthors-body-tiles-right {
+    width: 299px;
+    height: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+
+}
+
+.contributorsandsolutionauthors-tile {
+    width: 299px;
+    height: 136px;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    border-radius: 24px;
+    border: 1px solid #D6D7D9;
+    opacity: 0px;
+
+
+}
+
+.contributorsandsolutionauthors-tile-inner {
+    width: 267px;
+    height: 104px;
+    padding: 16px 16px 24px 16px;
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 24px;
+    opacity: 0px;
+
+
+}
+
+.contributorsandsolutionauthors-tile-inner-username {
+
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #2B4FB9;
+
+
+}
+
+.contributorsandsolutionauthors-tile-inner-likeorcomment {
+
+    font-family: Source Sans Pro;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #666666;
+
+
+
+}
