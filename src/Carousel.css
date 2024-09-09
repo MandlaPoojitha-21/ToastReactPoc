@@ -35,12 +35,13 @@
     gap: 16px;
     margin-left: 12px;
     margin-right: 12px;
+    text-decoration: none;
 }
-/* .card :hover{
+.card :hover{
     cursor: pointer;
     background-color: aliceblue;
 
-} */
+}
 
 
  .card img {
@@ -63,7 +64,7 @@
   } 
 
 /* Updated positioning for navigation buttons at the bottom center */
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next {
     background-color: white;
     border-radius: 50%;
@@ -73,7 +74,6 @@
     color: #007aff;
     position: absolute;
     bottom: 10px;
-    /* Position at the bottom */
     z-index: 10;
 }
 
@@ -82,19 +82,18 @@
     width: 48px;
     height: 48px;
     bottom: 5px;
-    /* Adjust for mobile */
     background-color: #2B4FB9;
     color: #ffffff;
 }
 
 .swiper-button-prev {
     left: 10px;
-    /* Position on the left */
+    
 }
 
 .swiper-button-next {
     right: 10px;
-    /* Position on the right */
+
 }
 
 .swiper-button-prev::after,
@@ -104,6 +103,28 @@
 
 .swiper-button-disabled {
     opacity: 0.3;
+} */
+ .prev-next-buttons{
+    display: flex;
+    width: 140.67px;
+height: Hug 48px;
+gap: 16px;
+
+
+ }
+.prev-button ,.next-button{
+    width: 48px;
+    height: 48px;
+    bottom: 5px;
+    background-color: #2B4FB9;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+
+
+}
+.swiper-button-disabled{
+    opacity: 0.3;
 }
 
 @media (max-width: 768px) {
@@ -112,23 +133,5 @@
         height: 320px;
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: 48px;
-        height: 48px;
-        bottom: 5px;
-        /* Adjust for mobile */
-        background-color: #2B4FB9;
-        color: #ffffff;
-    }
-
-    .swiper-button-prev {
-        left: 5px;
-        /* Position on the left */
-    }
-
-    .swiper-button-next {
-        right: 5px;
-        /* Position on the right */
-    }
+   
 }
