@@ -5,16 +5,10 @@ import 'swiper/css/navigation';
 import './Carousel.css'; 
 import { Navigation ,Autoplay} from 'swiper/modules';
 
-// Importing Lucide Icons
+
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-// Images
-// import stayCurrent_img from './assets/stayCurrent_img.png';
-// import findYourPlace_img from './assets/findYourPlace_img.png';
-// import connectWithToast_img from './assets/connectWithToast_img.png';
-// import earnBadges_img from './assets/earnBadges_img.png';
-// import shareSuccesses_img from './assets/shareSuccesses_img.png';
-// import becomeAnAmbassador_img from './assets/becomeAnAmbassador_img.png';
+
 
 import {stayCurrent_img} from './khoros-variables/khoros-variables.js';
 import {findYourPlace_img} from './khoros-variables/khoros-variables.js';
@@ -78,10 +72,9 @@ export default function Carousel() {
         swiperInstance.params.navigation.prevEl = prevRef.current;
         swiperInstance.params.navigation.nextEl = nextRef.current;
 
-        // Reinitialize navigation after updating the DOM elements
         swiperInstance.navigation.init();
         swiperInstance.navigation.update();
-        updateButtonState(); // Update button states on mount
+        updateButtonState();
       }
     };
 
@@ -100,9 +93,9 @@ export default function Carousel() {
           nextEl: nextRef.current,
         }}
         autoplay={{
-          delay: 1000, // 3 seconds delay
+          delay: 1000, 
           disableOnInteraction: false,
-          pauseOnMouseEnter : true // Autoplay won't stop on user interaction
+          pauseOnMouseEnter : true 
         }}
         modules={[Navigation,Autoplay]}
         breakpoints={{
@@ -126,7 +119,7 @@ export default function Carousel() {
           }
         }}
         onSlideChange={() => {
-          updateButtonState(); // Update button states on slide change
+          updateButtonState(); 
         }}
       >
         {carouselItems.map((item, index) => (

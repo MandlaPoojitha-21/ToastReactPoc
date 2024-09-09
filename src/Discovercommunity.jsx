@@ -16,11 +16,11 @@ const Discovercommunity = () => {
 
         </div>
         <button className='discovercommunity-login-button'>Login via Toast account</button>
-        {/* <div className="carousel-container"> */}
+       
           <Component/>
-        {/* </div> */}
+ 
     </div>
   )
 }
 
-export default Discovercommunity
+export default Discovercommunity;
