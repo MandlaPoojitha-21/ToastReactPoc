@@ -3,7 +3,7 @@ import './Discovercommunity.css';
 
 const Discovercommunity = () => {
   return (
-    <div className="discovercommunity toast-container">
+    <div className="discovercommunity">
         <div className="discovercommunity-header-section">
             <div className="discovercommunity-header-title">
                  <p>Discover what is inside the Toast community</p>
