@@ -1,0 +1,65 @@
+.discovercommunity-bg-color {
+    background-color: #ffffff;
+    border-radius: 32px;
+}
+
+.discovercommunity {
+    width: min(100%, var(--container-width));
+    margin: 0 auto;
+    padding-top: clamp(40px, 6vw, 60px);
+    padding-bottom: clamp(40px, 6vw, 60px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.discovercommunity-header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.discovercommunity-header-subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: calc(100% - 33%);
+}
+
+.discovercommunity-header-title {
+    font-family: var(--font-family-effra);
+    font-size: clamp(31px, 6vw, 45px);
+    font-weight: 400;
+    line-height: clamp(40px, 6vw, 48px);
+}
+
+.discovercommunity-header-paragraph {
+    font-family: var(--font-family-effra);
+    font-size: clamp(18px, 6vw, 22px);
+    font-weight: 400;
+    line-height: clamp(24px, 6vw, 32px);
+    color: var(--body-text-color);
+}
+
+.discovercommunity-button {
+    display: flex;
+}
+
+.discovercommunity-login-button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-family: var(--font-family-effra);
+    padding: 16px 24px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .discovercommunity-login-button,
+    .discovercommunity-header-subtitle {
+        width: 100%;
+    }
+}

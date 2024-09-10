@@ -2,53 +2,39 @@ import { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import './Carousel.css'; 
-import { Navigation ,Autoplay} from 'swiper/modules';
-
-
+import './PeersOnlineCarouselBottom.css'; 
+import { Navigation } from 'swiper/modules';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+// Images
+// import card1_img from './assets/card1_img.jpg';
+// import card2_img from './assets/card2_img.png';
+// import card3_img from './assets/card3_img.png';
+// import {stayCurrent_img} from './khoros-variables/khoros-variables.js';
+// import {findYourPlace_img} from './khoros-variables/khoros-variables.js';
+// import {earnBadges_img} from './khoros-variables/khoros-variables.js'
 
-
-import {stayCurrent_img} from './khoros-variables/khoros-variables.js';
-import {findYourPlace_img} from './khoros-variables/khoros-variables.js';
-import {earnBadges_img} from './khoros-variables/khoros-variables.js'
 
 const carouselItems = [
   {
-    title: 'Stay current',
-    description: 'Be the first to know about new products and features on the Toast product hub.',
-    image: stayCurrent_img,
+    title: 'Read success stories and share your own',
+    description: 'Share recent win, cheer on industry peers, and join us in fostering community.',
+    // image: stayCurrent_img,
   },
   {
-    title: 'Find your place',
-    description: 'Looking to connect with other bakery owners? Curious how other pizzerias configured their menu? Join one of our restaurant groups.',
-    image: findYourPlace_img,
+    title: 'Share your questions, insights, and best pratices',
+    description: 'No one knows your concept quite like you. Sort by restaurant type to connect with peers who get it.',
+    // image: findYourPlace_img,
   },
   {
-    title: 'Earn rewards',
-    description: 'Get rewarded for being an active community member. The more you participate, the more rewards you can earn!',
-    image: earnBadges_img,
+    title: 'Mentor and learn from other Toast restaurants',
+    description: 'Share tips and tricks with restaurants in the Toast community.',
+    // image: earnBadges_img,
   },
-  {
-    title: 'Connect with Toast',
-    description: 'Join AMA style events where you can pose questions to Toast leaders and product experts.',
-    // image: connectWithToast_img,
-  },
-  
-  {
-    title: 'Share feedback',
-    description: 'Your opinion matters. Participate in surveys and beta testing to shape the future of Toast products.',
-    // image: shareSuccesses_img,
-  },
-  {
-    title: 'Learn and grow',
-    description: 'Access exclusive webinars and tutorials to enhance your skills and grow your business.',
-    // image: becomeAnAmbassador_img,
-  },
+
 ];
 
-export default function Carousel() {
+export default function PeersOnlineCarouselBottom() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -72,9 +58,10 @@ export default function Carousel() {
         swiperInstance.params.navigation.prevEl = prevRef.current;
         swiperInstance.params.navigation.nextEl = nextRef.current;
 
+        // Reinitialize navigation after updating the DOM elements
         swiperInstance.navigation.init();
         swiperInstance.navigation.update();
-        updateButtonState();
+        updateButtonState(); // Update button states on mount
       }
     };
 
@@ -87,17 +74,17 @@ export default function Carousel() {
     <div className="carousel-container">
       <Swiper
         ref={swiperRef}
-        slidesPerView={3.25}
+        slidesPerView={3}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,
         }}
-        autoplay={{
-          delay: 1000, 
-          disableOnInteraction: false,
-          pauseOnMouseEnter : true 
-        }}
-        modules={[Navigation,Autoplay]}
+        // autoplay={{
+        //   delay: 1000, // 3 seconds delay
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter : true // Autoplay won't stop on user interaction
+        // }}
+        modules={[Navigation]}
         breakpoints={{
           320: {
             slidesPerView: 1.25,
@@ -106,8 +93,7 @@ export default function Carousel() {
             slidesPerView: 2.25,
           },
           1024: {
-            slidesPerView: 3.25,
-            
+            slidesPerView: 3,
           },
         }}
         className="mySwiper"
@@ -119,16 +105,30 @@ export default function Carousel() {
           }
         }}
         onSlideChange={() => {
-          updateButtonState(); 
+          updateButtonState(); // Update button states on slide change
         }}
       >
         {carouselItems.map((item, index) => (
           <SwiperSlide key={index}>
             <a href="#"className="card">
 
-              <img src={item.image} alt={item.title} />
-              <div className="card-title">{item.title}</div>
-              <div className="card-description">{item.description}</div>
+              
+                <div className="carousel-card-image-container">
+                    <div className="carousel-card-image">
+                      <img src={item.image} alt={item.title} />
+                    </div>
+                  </div>
+                  <div className="carousel-card-body">
+                    <div className="carousel-card-body-title">
+                      <p>{item.title}</p>
+
+                    </div>
+                    <div className="carousel-card-body-description">
+                      <p>{item.description}</p>
+
+                    </div>
+
+                  </div>
             </a>
           </SwiperSlide>
         ))}
