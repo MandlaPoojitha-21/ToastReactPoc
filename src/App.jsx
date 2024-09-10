@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Discovercommunity from './Discovercommunity'
+import PeersOnline from './PeersOnline'
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
    <React.Fragment>
    
     {/* <h1>Start putting your components here</h1> */}
-    <Discovercommunity/>
+    <PeersOnline/>
 
     </React.Fragment>
   )
