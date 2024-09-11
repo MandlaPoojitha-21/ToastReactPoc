@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Carousel.css";
+import "swiper/css";
 import { Navigation, Autoplay } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 // import stayCurrent_img from "../../assets/carosal-img.png";
@@ -24,7 +25,7 @@ const carouselItems = [
     title: "Earn badges",
     description:
       "Get recognized for your community contributions. The more you engage, the more you earn.",
-      image: Discover03,
+      image: Discover03,        
   },
   {
     title: "Connect with Toast",
