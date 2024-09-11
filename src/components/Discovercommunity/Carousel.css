@@ -1,4 +1,4 @@
-.discover-carousel-container {
+.discovercommunity-carousel-container {
     width: 100%;
     max-width: var(--carosal-width);
     margin: 0 auto;
@@ -6,18 +6,21 @@
     flex-direction: column;
     gap: 24px;
 
-    .discover-carousel {
+    .discovercommunity-carousel{
         display: flex;
     }
+/* 
+    .discovercommunity-swiperslide{
+        width: 410px !important;
+        height: 408px;
+    } */
 
-
-
-    .carosal-slide {
+    .discovercommunity-carousel-slide {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 16px;
         padding: 16px;
         text-decoration: none;
@@ -25,7 +28,7 @@
         border-radius: 24px;
         border: 1px solid #D6D7D9;
 
-        .card-img {
+        .discovercommunity-card-img {
             width: 100%;
             height: 100%;
             max-height: 200px;
@@ -37,13 +40,13 @@
             object-fit: cover;
         }
 
-        .card-content {
+        .discovercommunity-card-content {
             display: flex;
             flex-direction: column;
             gap: 4px;
             padding: 16px 16px 24px;
 
-            .card-title {
+            .discovercommunity-card-title {
                 font-size: clamp(22px, 6vw, 26px);
                 font-weight: 400;
                 line-height: 32px;
@@ -56,7 +59,7 @@
 
             }
 
-            .card-description {
+            .discovercommunity-card-description {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
@@ -70,12 +73,12 @@
         }
     }
 
-    .carosal-card {
+    .discovercommunity-carousel-card {
         text-decoration: none;
     }
 
 
-    .prev-next-buttons {
+    .discovercommunity-prev-next-buttons {
         display: flex;
         width: 140.67px;
         height: 48px;
@@ -84,8 +87,8 @@
 
     }
 
-    .prev-button,
-    .next-button {
+    .discovercommunity-prev-button,
+    .discovercommunity-next-button {
         width: 48px;
         height: 48px;
         bottom: 5px;

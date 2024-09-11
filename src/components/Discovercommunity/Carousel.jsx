@@ -4,48 +4,49 @@ import "./Carousel.css";
 import "swiper/css";
 import { Navigation, Autoplay } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-// import stayCurrent_img from "../../assets/carosal-img.png";
+import {customdata} from "../../khoros-variables/khoros-variables.js";
 
-import {findYourPlace_img,Discover03 ,Discover04 ,Discover05,Discover06,Discover_img} from "../../khoros-variables/khoros-variables.js";
 
-const carouselItems = [
-  {
-    title: "Stay current",
-    description:
-      "Be the first to know about new products and features on the Toast product hub.",
-    image: findYourPlace_img,
-  },
-  {
-    title: "Find your place",
-    description:
-      "Looking to connect with other bakery owners? Curious how other pizzerias configured their menu? Join one of our restaurant groups.",
-      image: Discover_img,
-  },
-  {
-    title: "Earn badges",
-    description:
-      "Get recognized for your community contributions. The more you engage, the more you earn.",
-      image: Discover03,        
-  },
-  {
-    title: "Connect with Toast",
-    description:
-      "Join AMA style events where you can pose questions to Toast leaders and product experts.",
-      image: Discover04,
-  },
-  {
-    title: "Share feedback",
-    description:
-      "Your opinion matters. Participate in surveys and beta testing to shape the future of Toast products.",
-      image: Discover05,
-  },
-  {
-    title: "Learn and grow",
-    description:
-      "Access exclusive webinars and tutorials to enhance your skills and grow your business.",
-      image: Discover06,
-  },
-];
+
+
+// const carouselItems = [
+//   {
+//     title: "Stay current",
+//     description:
+//       "Be the first to know about new products and features on the Toast product hub.",
+//     // image: findYourPlace_img,
+//   },
+//   {
+//     title: "Find your place",
+//     description:
+//       "Looking to connect with other bakery owners? Curious how other pizzerias configured their menu? Join one of our restaurant groups.",
+//       // image: Discover_img,
+//   },
+//   {
+//     title: "Earn badges",
+//     description:
+//       "Get recognized for your community contributions. The more you engage, the more you earn.",
+//       // image: Discover03,        
+//   },
+//   {
+//     title: "Connect with Toast",
+//     description:
+//       "Join AMA style events where you can pose questions to Toast leaders and product experts.",
+//       // image: Discover04,
+//   },
+//   {
+//     title: "Share feedback",
+//     description:
+//       "Your opinion matters. Participate in surveys and beta testing to shape the future of Toast products.",
+//       // image: Discover05,
+//   },
+//   {
+//     title: "Learn and grow",
+//     description:
+//       "Access exclusive webinars and tutorials to enhance your skills and grow your business.",
+//       // image: Discover06,
+//   },
+// ];
 
 export default function Carousel() {
   const prevRef = useRef(null);
@@ -83,8 +84,8 @@ export default function Carousel() {
   }, [prevRef, nextRef]);
 
   return (
-    <div className="discover-carousel-container">
-      <div className="discover-carousel">
+    <div className="discovercommunity-carousel-container">
+      <div className="discovercommunity-carousel">
         <Swiper
           ref={swiperRef}
           slidesPerView={3.25}
@@ -95,8 +96,9 @@ export default function Carousel() {
             nextEl: nextRef.current,
           }}
           autoplay={{
-            delay: 10000,
+            delay: 3000,
             disableOnInteraction: true,
+            pauseOnMouseEnter : true,
           }}
           modules={[Navigation, Autoplay]}
           breakpoints={{
@@ -122,16 +124,16 @@ export default function Carousel() {
             updateButtonState();
           }}
         >
-          {carouselItems.map((item, index) => (
-            <SwiperSlide key={index}>
-              <a href="#" className="carosal-slide" role="button">
-                <div className="carosal-card">
-                  <div className="card-img">
+          {customdata.discovercommunityCarouselItems.map((item, index) => (
+            <SwiperSlide className="discovercommunity-swiperslide" key={index}>
+              <a href="#" className="discovercommunity-carousel-slide" role="button">
+                <div className="discovercommunity-carousel-card">
+                  <div className="discovercommunity-card-img">
                     <img src={item.image} alt={item.title} />
                   </div>
-                  <div className="card-content">
-                    <h4 className="card-title">{item.title}</h4>
-                    <p className="card-description">{item.description}</p>
+                  <div className="discovercommunity-card-content">
+                    <h4 className="discovercommunity-card-title">{item.title}</h4>
+                    <p className="discovercommunity-card-description">{item.description}</p>
                   </div>
                 </div>
               </a>
@@ -139,11 +141,11 @@ export default function Carousel() {
           ))}
         </Swiper>
       </div>
-      <div className="prev-next-buttons">
-        <button className="prev-button" ref={prevRef}>
+      <div className="discovercommunity-prev-next-buttons">
+        <button className="discovercommunity-prev-button" ref={prevRef}>
           <ChevronLeft />
         </button>
-        <button className="next-button" ref={nextRef}>
+        <button className="discovercommunity-next-button" ref={nextRef}>
           <ChevronRight />
         </button>
       </div>

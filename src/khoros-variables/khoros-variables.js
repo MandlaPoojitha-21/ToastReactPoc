@@ -4,6 +4,6 @@ export const Discover03 = window.Discover03;
 export const Discover04 = window.Discover04;
 export const Discover05 = window.Discover05;
 export const Discover06 = window.Discover06;
-
-
 export const findYourPlace_img = window.findYourPlace_img;
+export const customdata = window.customdata;
+export const loginButton = window.loginButton;
