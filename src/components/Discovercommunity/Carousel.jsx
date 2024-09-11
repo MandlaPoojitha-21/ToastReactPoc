@@ -3,44 +3,46 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./Carousel.css";
 import { Navigation, Autoplay } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import stayCurrent_img from "../../assets/carosal-img.png";
+// import stayCurrent_img from "../../assets/carosal-img.png";
+
+import {findYourPlace_img,Discover03 ,Discover04 ,Discover05,Discover06,Discover_img} from "../../khoros-variables/khoros-variables.js";
 
 const carouselItems = [
   {
     title: "Stay current",
     description:
       "Be the first to know about new products and features on the Toast product hub.",
-    image: stayCurrent_img,
+    image: findYourPlace_img,
   },
   {
     title: "Find your place",
     description:
       "Looking to connect with other bakery owners? Curious how other pizzerias configured their menu? Join one of our restaurant groups.",
-    image: stayCurrent_img,
+      image: Discover_img,
   },
   {
     title: "Earn badges",
     description:
       "Get recognized for your community contributions. The more you engage, the more you earn.",
-    image: stayCurrent_img,
+      image: Discover03,
   },
   {
     title: "Connect with Toast",
     description:
       "Join AMA style events where you can pose questions to Toast leaders and product experts.",
-    image: stayCurrent_img,
+      image: Discover04,
   },
   {
     title: "Share feedback",
     description:
       "Your opinion matters. Participate in surveys and beta testing to shape the future of Toast products.",
-    image: stayCurrent_img,
+      image: Discover05,
   },
   {
     title: "Learn and grow",
     description:
       "Access exclusive webinars and tutorials to enhance your skills and grow your business.",
-    image: stayCurrent_img,
+      image: Discover06,
   },
 ];
 
@@ -92,8 +94,8 @@ export default function Carousel() {
             nextEl: nextRef.current,
           }}
           autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
+            delay: 10000,
+            disableOnInteraction: true,
           }}
           modules={[Navigation, Autoplay]}
           breakpoints={{
