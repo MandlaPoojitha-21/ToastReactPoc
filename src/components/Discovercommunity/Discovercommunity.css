@@ -2,6 +2,9 @@
     background-color: #ffffff;
     border-radius: 32px;
 }
+.discovercommunity-swiper {
+    width: 100%;
+}
 
 .discovercommunity {
     width: min(100%, var(--container-width));
