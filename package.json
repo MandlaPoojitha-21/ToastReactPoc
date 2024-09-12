@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:esbuild": "esbuild  src/main.jsx --bundle --outfile=dist/discover-community.js --jsx=automatic --loader:.woff2=dataurl ",
+    "build:esbuild": "esbuild  src/main.jsx --bundle --outfile=dist/peers-online.js --jsx=automatic --loader:.woff2=dataurl ",
     "lint": "eslint .",
     "preview": "vite preview"
   },

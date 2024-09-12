@@ -1,0 +1,140 @@
+.peersonline {
+    width: min(100%, var(--container-width));
+    margin: 0 auto;
+    padding-top: clamp(40px, 6vw, 60px);
+    padding-bottom: clamp(40px, 6vw, 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+
+}
+.peersonline-swiper{
+    width: 100%;
+}
+
+.peersonline-header {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    background-color: white;
+
+
+}
+
+.peersonline-header-top {
+    display: flex;
+    gap: 8px;
+
+}
+
+.peersonline-header-top-capsule {
+    width: 136px;
+    height: 22px;
+    padding: 4px 8px 4px 8px;
+    display: flex;
+    gap: 4px;
+    border-radius: 30px;
+    background-color: #FED850;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 1.2000000476837158px;
+    text-align: center;
+    color: #252525;
+
+
+}
+.peersonline-header-bottom {
+    width: calc(100% - 33%);
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+
+
+}
+
+.peersonline-carousels-container {
+   width: 100%;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+
+.peersonline-card-tile {
+    width: 1280px;
+    height: 456px;
+    padding: 0px 0px 40px 0px;
+    display: flex;
+    gap: 24px;
+    opacity: 0px;
+
+
+}
+
+.peersonline-card {
+    width: 410px;
+    height: 416px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 24px;
+    border: 1px solid #D6D7D9;
+    opacity: 0px;
+
+}
+
+.peersonline-card-header,
+.card_img {
+    width: 378px;
+    height: 200px;
+    border-radius: 14px;
+    opacity: 0px;
+
+
+}
+
+.peersonline-card-body {
+    width: 378px;
+    height: 168px;
+    padding: 16px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 24px;
+    opacity: 0px;
+
+}
+
+.peersonline-card-body-title {
+
+    font-family: Effra;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #252525;
+
+}
+
+.peersonline-card-body-text {
+
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #666666;
+
+}
