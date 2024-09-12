@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Carousel.css";
 import "swiper/css";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation} from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import {customdata} from "../../khoros-variables/khoros-variables.js";
 
@@ -95,12 +95,8 @@ export default function Carousel() {
             prevEl: prevRef.current,
             nextEl: nextRef.current,
           }}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: true,
-            pauseOnMouseEnter : true,
-          }}
-          modules={[Navigation, Autoplay]}
+          
+          modules={[Navigation]}
           breakpoints={{
             320: {
               slidesPerView: 1.15,
