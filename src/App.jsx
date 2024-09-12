@@ -8,7 +8,7 @@ function App() {
     <React.Fragment>
       {/* <h1>Start putting your components here</h1> */}
       <Discovercommunity />
-    5  {/* <PeersOnline /> */}
+      {/* <PeersOnline /> */}
     </React.Fragment>
   );
 }
