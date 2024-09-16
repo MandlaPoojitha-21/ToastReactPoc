@@ -1,6 +1,6 @@
-.peersonline-carousel-container {
+.peersonline-bottom-carousel-container {
     width: 100%;
-    max-width: var(--carosal-width);
+    max-width: var(--carousel-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -99,50 +99,26 @@
 
     }
     .peersonline-prev-next-buttons .swiper-button-disabled {
-        opacity: 0.3;
+        background-color: #E7EAF6;
      }
 
     
 }
 @media (min-width: 1024px) {
+    .peersonline-bottom-carousel-container .peersonline-prev-next-buttons{
+        display: none;
+    }
     .peersonline-prev-next-buttons .swiper-button-disabled {
         display: none;
     }
+    
 
 }
 @media (max-width: 768px) {
+    
     .peersonline-prev-next-buttons .swiper-button-disabled {
        opacity: 0.3;
        display: block;
     }
 
 }
-
-
-/* 
-@media (max-width: 375px) {
-    .discovercommunity-carousel-container {
-        padding: 40px 16px 40px 0px;
-        gap: 16px;
-    }
-
-    .discovercommunity-carousel-slide {
-        padding: 16px;
-        gap: 16px;
-    }
-
-    .discovercommunity-card-content {
-        padding: 16px 16px 24px 16px;
-        gap: 16px;
-
-        .discovercommunity-card-title {
-            font-size: 22px;
-            line-height: 32px;
-        }
-
-        .discovercommunity-card-description {
-            font-size: 16px;
-            line-height: 24px;
-        }
-    }
-} */

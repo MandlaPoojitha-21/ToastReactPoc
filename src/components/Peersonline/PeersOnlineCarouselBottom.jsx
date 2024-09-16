@@ -67,7 +67,7 @@ export default function PeersOnlineCarouselBottom() {
   }, [prevRef, nextRef]);
 
   return (
-    <div className="peersonline-carousel-container">
+    <section className="peersonline-bottom-carousel-container">
       <div className="peersonline-carousel">
         <Swiper
           ref={swiperRef}
@@ -128,6 +128,6 @@ export default function PeersOnlineCarouselBottom() {
           <ChevronRight />
         </button>
       </div>
-    </div>
+    </section>
   );
 }

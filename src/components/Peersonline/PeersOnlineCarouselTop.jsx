@@ -4,28 +4,8 @@ import "./PeersOnlineCarouselTop.css";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-// import carosal_img from '../../assets/carosal-img.png';
-// import TestimonialLogo01 from '../../assets/TestimonialLogo01.png';
 import {customdata} from "../../khoros-variables/khoros-variables.js";
 
-
-
-
-// const carouselItems = [
-//   {
-//       testimonial: '“For me, it’s about the relationships and the ability to learn from one another. I find real value in learning from different types of businesses.”',
-//       testimonial_author_name: 'Shaz Khan',
-//       testimonial_author_supporting_text: 'Owner, Tono Pizzeria & Cheesesteaks',
-//       testimonial_author_img : carosal_img,
-//       testimonial_author_company_logo : TestimonialLogo01
-
-//   },
-//   {
-//       testimonial: '“For me, it’s about the relationships and the ability to learn from one another. I find real value in learning from different types of businesses.”',
-//       testimonial_author_name: 'Shaz Khan',
-//       testimonial_author_supporting_text: 'Owner, Tono Pizzeria & Cheesesteaks'
-//   }
-// ];
 
 export default function PeersOnlineCarouselTop() {
   const prevRef = useRef(null);
@@ -63,7 +43,8 @@ export default function PeersOnlineCarouselTop() {
   }, [prevRef, nextRef]);
 
   return (
-    <div className="peersonline-top-carousel-container">
+    <section className="peersonline-top-carousel-container">
+      <div className="peersonline-top-carousel-swipercontainer">
 
         <Swiper
           ref={swiperRef}
@@ -141,6 +122,7 @@ export default function PeersOnlineCarouselTop() {
           <ChevronRight />
         </button>
       </div>
-    </div>
+      </div>
+    </section>
   );
 }
