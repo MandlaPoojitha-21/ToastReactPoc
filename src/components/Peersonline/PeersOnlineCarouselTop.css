@@ -76,6 +76,7 @@
 }
 
 .PeersOnlineCarouselTop-left-testimonial {
+    font-family: var(--font-family-effra);
     width: 85%;
     color: #252525;
     font-size: 26px;
@@ -99,6 +100,7 @@
 }
 
 .PeersOnlineCarouselTop-left-testimonial-details-name-text {
+    font-family: var(--font-family-effra);
     font-size: 26px;
     font-weight: 400;
     line-height: 32px;
@@ -106,6 +108,7 @@
 }
 
 .PeersOnlineCarouselTop-left-testimonial-details-name-supportingtext {
+    font-family: var(--font-family-SourceSansPro);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;

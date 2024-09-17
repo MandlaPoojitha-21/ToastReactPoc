@@ -8,25 +8,25 @@
 :root {
   --container-width: 1280px;
   --carousel-width: 1360px;
-  --font-family-headings: 'Effra', sans-serif;
-  --font-family-body-text: "SourceSansPro",sans-serif;
+  /* --font-family-headings: 'Effra', sans-serif;
+  --font-family-body-text: "SourceSansPro",sans-serif; */
   --body-text-color: #666666;
   --primary-color: #2B4FB9;
 }
 
 
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
   font-family: var(--font-family-body-text);
   font-size: 16px;
   line-height: 24px;
   color: #252525;
-}
+} */
 
 
 /* @media only screen and (min-width: 1400px) {

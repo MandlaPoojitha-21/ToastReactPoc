@@ -24,8 +24,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 16px;
     background-color: white;
+    margin-top: 16px;
 
 
 }
@@ -54,6 +54,7 @@
 
 }
 .peersonline-header-bottom {
+    font-family: var(--font-family-effra);
     width: calc(100% - 33%);
     font-size: 45px;
     font-weight: 400;
@@ -129,9 +130,7 @@
     line-height: 32px;
     text-align: left;
     color: #252525;
-
 }
-
 .peersonline-card-body-text {
 
     font-family: Source Sans Pro;
