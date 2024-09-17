@@ -120,7 +120,7 @@ export default function PeersOnlineCarouselBottom() {
           ))}
         </Swiper>
       </div>
-      {customdata.}
+      
       <div className="peersonline-bottom-prev-next-buttons">
         <button className="peersonline-prev-button" ref={prevRef}>
           <ChevronLeft />

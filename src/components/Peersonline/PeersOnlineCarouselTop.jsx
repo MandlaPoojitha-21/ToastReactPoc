@@ -25,7 +25,6 @@ export default function PeersOnlineCarouselTop() {
   };
 
   useEffect(() => {
-    console.log("items length : ",customdata.peersonlineTopCarouselItems.length);
     const handleNavigationUpdate = () => {
       const swiperInstance = swiperRef.current;
       if (swiperInstance && swiperInstance.navigation) {
