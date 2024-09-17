@@ -31,7 +31,7 @@
     }
 }
 
-.buttons-container {
+.peersonline-top-prev-next-buttons {
     position: absolute;
     display: flex;
     height: 48px;
@@ -57,7 +57,7 @@
 
 }
 
-.buttons-container .swiper-button-disabled {
+.peersonline-top-prev-next-buttons .swiper-button-disabled {
     background-color: #E7EAF6;
 }
 

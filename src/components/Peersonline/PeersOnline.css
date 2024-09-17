@@ -1,6 +1,5 @@
 .peersonline-container{
-    padding-top: clamp(40px, 6vw, 60px);
-    padding-bottom: clamp(40px, 6vw, 60px);
+    padding: clamp(40px, 6vw, 60px) 0;
 
 }
 .peersonline {

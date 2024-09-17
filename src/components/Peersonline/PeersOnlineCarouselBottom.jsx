@@ -82,7 +82,7 @@ export default function PeersOnlineCarouselBottom() {
           modules={[Navigation]}
           breakpoints={{
             320: {
-              slidesPerView: 1.5,
+              slidesPerView: 1,
             },
             768: {
               slidesPerView: 2,
@@ -120,7 +120,8 @@ export default function PeersOnlineCarouselBottom() {
           ))}
         </Swiper>
       </div>
-      <div className="peersonline-prev-next-buttons">
+      {customdata.}
+      <div className="peersonline-bottom-prev-next-buttons">
         <button className="peersonline-prev-button" ref={prevRef}>
           <ChevronLeft />
         </button>

@@ -25,6 +25,7 @@ export default function PeersOnlineCarouselTop() {
   };
 
   useEffect(() => {
+    console.log("items length : ",customdata.peersonlineTopCarouselItems.length);
     const handleNavigationUpdate = () => {
       const swiperInstance = swiperRef.current;
       if (swiperInstance && swiperInstance.navigation) {
@@ -113,15 +114,18 @@ export default function PeersOnlineCarouselTop() {
             </SwiperSlide>
           ))}
         </Swiper>
-  
-      <div className="buttons-container">
-        <button className="peersonline-prev-button" ref={prevRef}>
-          <ChevronLeft />
-        </button>
-        <button className="peersonline-next-button" ref={nextRef}>
-          <ChevronRight />
-        </button>
-      </div>
+      {customdata.peersonlineTopCarouselItems.length > 1 && (
+          <div className="peersonline-top-prev-next-buttons">
+          <button className="peersonline-prev-button" ref={prevRef}>
+            <ChevronLeft />
+          </button>
+          <button className="peersonline-next-button" ref={nextRef}>
+            <ChevronRight />
+          </button>
+        </div>
+
+      )}
+    
       </div>
     </section>
   );
