@@ -1,6 +1,5 @@
 .peersonline-top-carousel-container {
     width: 100%;
-    /* max-width: var(--carousel-width); */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
