@@ -1,3 +1,8 @@
+.peersonline-carousels-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 .peersonline-container{
     padding: clamp(40px, 6vw, 60px) 0;
 

@@ -12,8 +12,11 @@ const PeersOnline = () => {
             <p>{customdata.peersonlineheading}</p>
           </div>
         </div>
+        <div className='peersonline-carousels-container'>
         <PeersOnlineCarouselTop />
         <PeersOnlineCarouselBottom />
+        </div>
+        
       </section>
     </>
   )
