@@ -1,6 +1,6 @@
 import Component from "./Carousel";
 import "./Discovercommunity.css";
-import { loginButton } from "../../khoros-variables/khoros-variables.js";
+import { customdata , loginButton } from "../../khoros-variables/khoros-variables.js";
 
 const Discovercommunity = () => {
 
@@ -12,12 +12,10 @@ const Discovercommunity = () => {
             <div className="discovercommunity-header">
               <div className="discovercommunity-header-subtitle">
                 <h3 className="discovercommunity-header-title">
-                  Discover what is inside the Toast community
+                  {customdata.discovercommunityheading}
                 </h3>
                 <p className="discovercommunity-header-paragraph">
-                  Toast Community was created to give like-minded restaurant
-                  people a place to connect and collaborate. There is plenty to
-                  see and do!
+                {customdata.discovercommunitydescription}
                 </p>
               </div>
               <div
