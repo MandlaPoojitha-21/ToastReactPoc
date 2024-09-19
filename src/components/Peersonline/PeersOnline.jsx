@@ -1,7 +1,7 @@
 import './PeersOnline.css'
 import PeersOnlineCarouselBottom from './PeersOnlineCarouselBottom';
 import PeersOnlineCarouselTop from './PeersOnlineCarouselTop';
-import { customdata } from "../../khoros-variables/khoros-variables.js";
+import { peersonlinecustomdata } from "../../khoros-variables/khoros-variables.js";
 
 const PeersOnline = () => {
   return (
@@ -9,7 +9,7 @@ const PeersOnline = () => {
       <section className="peersonline">
         <div className="peersonline-header" > 
           <div className="peersonline-header-bottom">
-            <p>{customdata.peersonlineheading}</p>
+            <p>{peersonlinecustomdata.peersonlineheading}</p>
           </div>
         </div>
         <div className='peersonline-carousels-container'>

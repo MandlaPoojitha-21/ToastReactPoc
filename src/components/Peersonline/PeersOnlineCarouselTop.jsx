@@ -4,7 +4,7 @@ import "./PeersOnlineCarouselTop.css";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import {customdata} from "../../khoros-variables/khoros-variables.js";
+import {peersonlinecustomdata} from "../../khoros-variables/khoros-variables.js";
 
 
 export default function PeersOnlineCarouselTop() {
@@ -80,7 +80,7 @@ export default function PeersOnlineCarouselTop() {
             updateButtonState();
           }}
         >
-          {customdata.peersonlineTopCarouselItems.map((item, index) => (
+          {peersonlinecustomdata.peersonlineTopCarouselItems.map((item, index) => (
             <SwiperSlide
               className="peersonline-top-swiperslide" key={index}>
               <div className="PeersOnlineCarouselTop-card">
@@ -113,7 +113,7 @@ export default function PeersOnlineCarouselTop() {
             </SwiperSlide>
           ))}
         </Swiper>
-      {customdata.peersonlineTopCarouselItems.length > 1 && (
+      {peersonlinecustomdata.peersonlineTopCarouselItems.length > 1 && (
           <div className="peersonline-top-prev-next-buttons">
           <button className="peersonline-prev-button" ref={prevRef}>
             <ChevronLeft />

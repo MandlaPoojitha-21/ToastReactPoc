@@ -4,7 +4,7 @@ import "./PeersOnlineCarouselBottom.css";
 import "swiper/css";
 import { Navigation} from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import {customdata} from "../../khoros-variables/khoros-variables.js";
+import {peersonlinecustomdata} from "../../khoros-variables/khoros-variables.js";
 
 
 export default function PeersOnlineCarouselBottom() {
@@ -79,7 +79,7 @@ export default function PeersOnlineCarouselBottom() {
             updateButtonState();
           }}
         >
-          {customdata.peersonlineBottomCarouselItems.map((item, index) => (
+          {peersonlinecustomdata.peersonlineBottomCarouselItems.map((item, index) => (
             <SwiperSlide className="peersonline-swiperslide" key={index}>
               <a href="#" className="peersonline-carousel-slide" role="button">
                 <div className="peersonline-carousel-card">
