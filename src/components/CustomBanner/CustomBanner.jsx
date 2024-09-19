@@ -1,5 +1,5 @@
 import './CustomBanner.css';
-import { bannercustomdata, globalSearchOutput, globalUsername, globalVideoIcon, globalloginButton, globalstartButton } from '../../khoros-variables/khoros-variables.js';
+import { bannercustomdata, globalSearchOutput, globalUsername, globalloginButton, globalstartButton } from '../../khoros-variables/khoros-variables.js';
 import { useState } from 'react';
 
 function CustomBanner() {
@@ -18,9 +18,9 @@ function CustomBanner() {
             {LITHIUM.CommunityJsonObject.User.isAnonymous && (
                 <div className='thumbnail'>
                     <div className='playbutton'>
-                        <span onClick={openModal} ><img src={globalVideoIcon} alt='playbutton' /></span>
+                        <span onClick={openModal} ><img src={bannercustomdata.logout_urls.icon} alt='playbutton' /></span>
                     </div>
-                    <img src={bannercustomdata.login_urls.thumbnail_url} alt="Thumbnail" className='image-thumbnail' />
+                    <img src={bannercustomdata.logout_urls.thumbnail_url} alt="Thumbnail" className='image-thumbnail' />
                 </div>
             )}
             <section className='banner-page'>
@@ -43,7 +43,7 @@ function CustomBanner() {
                             </div>
 
                             <p className="product-links">
-                                <span><span className='product-text'>Looking for more on our product? </span><a href={bannercustomdata.logout_urls.producthub}>Product Hub</a> or <a href={bannercustomdata.logout_urls.testkitchen}>Test Kitchen</a></span>
+                                <span><span className='product-text'>Looking for more on our product? </span><a href={bannercustomdata.login_urls.producthub}>Product Hub</a> or <a href={bannercustomdata.login_urls.testkitchen}>Test Kitchen</a></span>
                             </p>
                         </>
                     ) : (
@@ -62,7 +62,7 @@ function CustomBanner() {
                               
                                 </button>
                             </div>
-                            <p className="insight-link">Not a Toast customer? <a href={bannercustomdata.login_urls.explore_industry}>Explore industry insights →</a></p>
+                            <p className="insight-link">Not a Toast customer? <a href={bannercustomdata.logout_urls.explore_industry}>Explore industry insights →</a></p>
                         </>
                     )}
                 </div>
@@ -72,7 +72,7 @@ function CustomBanner() {
                     <div className='modal-content'>
                         <span className='close-button' onClick={closeModal}>&times;</span>
                         <iframe
-                            src={`${bannercustomdata.login_urls.youtube_url}?autoplay=1`}
+                            src={`${bannercustomdata.logout_urls.youtube_url}?autoplay=1`}
                             title="Video Modal"
                             width="100%"
                             height="100%"
