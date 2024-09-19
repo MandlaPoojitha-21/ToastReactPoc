@@ -2,8 +2,9 @@ import './CustomBanner.css';
 import { bannercustomdata, globalSearchOutput, globalUsername, globalloginButton, globalstartButton } from '../../khoros-variables/khoros-variables.js';
 import { useState } from 'react';
 
-function CustomBanner() {
+function CustomBanner(props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    
     const openModal = () => {
         setIsModalOpen(true);
     };
@@ -12,7 +13,7 @@ function CustomBanner() {
     }; 
     return (
         <>
-            {LITHIUM.CommunityJsonObject.User.isAnonymous && (
+            {props.isAnonymous && (
                 <div className='thumbnail'>
                     <div className='playbutton'>
                         <span onClick={openModal} ><img src={bannercustomdata.logout_urls.icon} alt='playbutton' /></span>
@@ -22,7 +23,7 @@ function CustomBanner() {
             )}
             <section className='banner-page'>
                 <div className='hero-banner'>
-                    {!LITHIUM.CommunityJsonObject.User.isAnonymous ? (
+                    {!props.isAnonymous ? (
                         <>
                             <h1>Welcome back, {globalUsername}!</h1>
                             <p>Welcome to Toast Community. Find answers, ask questions, and share <br /> successes with your industry peers.</p>
@@ -45,7 +46,7 @@ function CustomBanner() {
                         </>
                     ) : (
                         <>
-                            <h1>Connect with restaurants like yours</h1>
+                            <h1>Connect with restaurants like yours.</h1>
                             <p>Learn and network from your industry peers through this exclusive <br /> community for Toast customers.</p>
 
                             <div className="search-login">
