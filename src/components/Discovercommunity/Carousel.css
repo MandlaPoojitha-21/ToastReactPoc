@@ -1,6 +1,6 @@
 .discovercommunity-carousel-container {
     width: 100%;
-    max-width: var(--carosal-width);
+    max-width: var(--carousel-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -88,7 +88,6 @@
 
 
     }
-
     .discovercommunity-prev-button,
     .discovercommunity-next-button {
         width: 48px;
@@ -103,7 +102,6 @@
         justify-content: center;
 
     }
-
     .swiper-button-disabled {
        background-color: #E7EAF6;
     }

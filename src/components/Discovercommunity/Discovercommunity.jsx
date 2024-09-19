@@ -3,10 +3,8 @@ import "./Discovercommunity.css";
 import { customdata , loginButton } from "../../khoros-variables/khoros-variables.js";
 
 const Discovercommunity = () => {
-
   return (
     <>
-      {/* {!LITHIUM.CommunityJsonObject.User.isAnonymous ? ( */}
         <section className="discovercommunity-bg-color">
           <div className="discovercommunity">
             <div className="discovercommunity-header">
@@ -27,7 +25,6 @@ const Discovercommunity = () => {
             <Component />
           </div>
         </section>
-      {/* ) : null} */}
     </>
   );
 };

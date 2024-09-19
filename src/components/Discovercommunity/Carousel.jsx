@@ -6,7 +6,6 @@ import { Navigation} from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import {customdata} from "../../khoros-variables/khoros-variables.js";
 
-
 export default function Carousel() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -23,7 +22,6 @@ export default function Carousel() {
       }
     }
   };
-
   useEffect(() => {
     const handleNavigationUpdate = () => {
       const swiperInstance = swiperRef.current;

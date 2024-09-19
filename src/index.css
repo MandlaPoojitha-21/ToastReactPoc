@@ -1,27 +1,7 @@
-/* @font-face {
-  font-family: 'Effra';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Effra'), url('./Effra_Std_Rg.woff') format('woff');
-} */
-
 :root {
   --container-width: 1280px;
-  --carosal-width: 1360px;
-  /* --font-family-headings: 'Effra', sans-serif;
-  --font-family-body-text: "SourceSansPro",sans-serif; */
+  --carousel-width: 1360px;
   --body-text-color: #666666;
   --primary-color: #2B4FB9;
 }
 
-
-
-
-
-
-/* @media only screen and (min-width: 1400px) {
-  .toast-container{
-    width: 1440px;
-    margin: 0 auto;
-   }
-} */
