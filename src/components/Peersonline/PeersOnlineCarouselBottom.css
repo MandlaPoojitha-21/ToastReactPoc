@@ -10,8 +10,6 @@
         display: flex;
     }
 
-
-
     .peersonline-carousel-slide {
         width: 100%;
         height: 100%;
@@ -102,9 +100,7 @@
     }
     .peersonline-bottom-prev-next-buttons .swiper-button-disabled {
         background-color: #E7EAF6;
-     }
-
-    
+     } 
 }
 @media (min-width: 1024px) {
     .peersonline-bottom-carousel-container .peersonline-bottom-prev-next-buttons{
@@ -114,7 +110,6 @@
         display: none;
     }
     
-
 }
 @media (max-width: 768px) {
     
