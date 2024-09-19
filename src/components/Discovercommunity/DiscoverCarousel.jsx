@@ -1,12 +1,12 @@
 import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./Carousel.css";
+import "./DiscoverCarousel.css";
 import "swiper/css";
 import { Navigation} from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import {customdata} from "../../khoros-variables/khoros-variables.js";
+import {discovercustomdata} from "../../khoros-variables/khoros-variables.js";
 
-export default function Carousel() {
+export default function DiscoverCarousel() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -77,7 +77,7 @@ export default function Carousel() {
             updateButtonState();
           }}
         >
-          {customdata.discovercommunityCarouselItems.map((item, index) => (
+          {discovercustomdata.discovercommunityCarouselItems.map((item, index) => (
             <SwiperSlide className="discovercommunity-swiperslide" key={index}>
               <a href="#" className="discovercommunity-carousel-slide" role="button">
                 <div className="discovercommunity-carousel-card">

@@ -1,6 +1,7 @@
-import Component from "./Carousel";
+
 import "./Discovercommunity.css";
-import { customdata , loginButton } from "../../khoros-variables/khoros-variables.js";
+import { discovercustomdata , loginButton } from "../../khoros-variables/khoros-variables.js";
+import DiscoverCarousel from "./DiscoverCarousel.jsx";
 
 const Discovercommunity = () => {
   return (
@@ -10,10 +11,10 @@ const Discovercommunity = () => {
             <div className="discovercommunity-header">
               <div className="discovercommunity-header-subtitle">
                 <h3 className="discovercommunity-header-title">
-                  {customdata.discovercommunityheading}
+                  {discovercustomdata.discovercommunityheading}
                 </h3>
                 <p className="discovercommunity-header-paragraph">
-                {customdata.discovercommunitydescription}
+                {discovercustomdata.discovercommunitydescription}
                 </p>
               </div>
               <div
@@ -21,8 +22,8 @@ const Discovercommunity = () => {
                 dangerouslySetInnerHTML={{ __html: loginButton }}
               />
             </div>
-
-            <Component />
+            <DiscoverCarousel/>
+           
           </div>
         </section>
     </>

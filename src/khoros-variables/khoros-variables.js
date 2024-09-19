@@ -1,3 +1,3 @@
 
-export const customdata = window.customdata;
+export const discovercustomdata = window.discovercustomdata;
 export const loginButton = window.loginButton;
