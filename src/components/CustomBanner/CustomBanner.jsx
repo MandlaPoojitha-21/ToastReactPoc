@@ -4,15 +4,12 @@ import { useState } from 'react';
 
 function CustomBanner() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-
     const openModal = () => {
         setIsModalOpen(true);
     };
-
     const closeModal = () => {
         setIsModalOpen(false);
-    };
-    
+    }; 
     return (
         <>
             {LITHIUM.CommunityJsonObject.User.isAnonymous && (

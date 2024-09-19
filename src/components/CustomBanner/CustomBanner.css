@@ -10,8 +10,6 @@
   justify-content: center;
   z-index: 1000;
 }
-
-
 .modal-content {
   padding: 20px;
   border-radius: 8px;
@@ -23,7 +21,6 @@
   overflow: hidden; 
 }
 
-
 .close-button {
   position: absolute;
   top: 10px;
@@ -32,11 +29,9 @@
   cursor: pointer;
 }
 
-
 .thumbnail {
   cursor: pointer;
 }
-
 .image-thumbnail{
     width: 450px;
     height: 259px;

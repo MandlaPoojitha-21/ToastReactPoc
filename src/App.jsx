@@ -5,8 +5,8 @@ import CustomBanner from "./components/CustomBanner/CustomBanner";
 
 function App() {
   return (
-    <React.Fragment>  
-     <CustomBanner/>
+    <React.Fragment>
+      <CustomBanner />
     </React.Fragment>
   );
 }
