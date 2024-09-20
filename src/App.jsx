@@ -6,7 +6,7 @@ function App() {
   const isAnonymous = LITHIUM?.CommunityJsonObject?.User?.isAnonymous || false;
   return (
     <React.Fragment>
-      <CustomBanner  isAnonymous = {isAnonymous}/>
+      <CustomBanner isAnonymous= {isAnonymous}/>
     </React.Fragment>
   );
 }

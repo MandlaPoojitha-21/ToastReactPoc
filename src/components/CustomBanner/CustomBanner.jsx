@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 function CustomBanner(props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    
     const openModal = () => {
         setIsModalOpen(true);
     };
@@ -25,8 +24,8 @@ function CustomBanner(props) {
                 <div className='hero-banner'>
                     {!props.isAnonymous ? (
                         <>
-                            <h1>Welcome back, {globalUsername}!</h1>
-                            <p>Welcome to Toast Community. Find answers, ask questions, and share <br /> successes with your industry peers.</p>
+                            <h1>{bannercustomdata.login_text.heading}, {globalUsername}!</h1>
+                            <p>{bannercustomdata.login_text.supporting_text}</p>
 
                             <div className="search-login">
                                 <div className="search-bar">
@@ -41,13 +40,13 @@ function CustomBanner(props) {
                             </div>
 
                             <p className="product-links">
-                                <span><span className='product-text'>Looking for more on our product? </span><a href={bannercustomdata.login_urls.producthub}>Product Hub</a> or <a href={bannercustomdata.login_urls.testkitchen}>Test Kitchen</a></span>
+                                <span><span className='product-text'>{bannercustomdata.login_text.product_text}</span><a href={bannercustomdata.login_urls.product_one_url}>{bannercustomdata.login_text.product_one}</a> or <a href={bannercustomdata.login_urls.product_two_url}>{bannercustomdata.login_text.product_two}</a></span>
                             </p>
                         </>
                     ) : (
                         <>
-                            <h1>Connect with restaurants like yours.</h1>
-                            <p>Learn and network from your industry peers through this exclusive <br /> community for Toast customers.</p>
+                            <h1>{bannercustomdata.logout_text.heading}</h1>
+                            <p>{bannercustomdata.logout_text.supporting_text}</p>
 
                             <div className="search-login">
                                 <div className="search-bar">
@@ -60,7 +59,7 @@ function CustomBanner(props) {
                               
                                 </button>
                             </div>
-                            <p className="insight-link">Not a Toast customer? <a href={bannercustomdata.logout_urls.explore_industry}>Explore industry insights →</a></p>
+                            <p className="insight-link">{bannercustomdata.logout_text.conclusion_text}<a href={bannercustomdata.logout_urls.explore_industry}>{bannercustomdata.logout_text.explore_text}</a></p>
                         </>
                     )}
                 </div>
