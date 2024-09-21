@@ -1,67 +1,126 @@
 .navbar {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-  
-    
-    padding: 25px 80px ;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    font-family: SourceSansPro;
-    font-weight: 400;
-  }
-  .navbar-left ,.navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .custom-community-header-navigation-v3 {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  .custom-community-header-navigation-v3 li{
-    padding: 20px;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-family: SourceSansPro;
+  font-weight: 400;
+}
 
-  }
-  
-  .toast-icon {
-    width: 116px;
-    height: 27px;
-    cursor: pointer;
-    margin-right : 15px;
-  }
-  .search-input {
-    width: 184px;
-    border-radius: 40px;
-    border: 1px solid #D6D7D9;
-    padding-left: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+}
 
-  }
-  
-  .search-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #333;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  .login-button{
-    /* width : 205px; */
-    padding: 11px  24px  13px 24px;
-    border-radius: 40px;
-    background-color: #2B4FB9;
-    color: #ffffff;
-    border: none;
-    font-weight: 600;
-    margin-left: 15px;
-    font-size: 16px;
-    line-height: 16px;
-  }
+.custom-community-header-navigation-v3 {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+}
+
+/* Subnav and More Nav containers */
+.subnav, .more-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* When hovering over a nav-item or more-nav, show the subnav or more-nav */
+.nav-item:hover .subnav,
+.nav-item:hover .more-nav {
+  display: block;
+}
+
+.more-nav {
+  left: -20px;
+  white-space: nowrap;
+}
+
+/* Subnav Items (for regular nav items) */
+.subnav-item {
+  padding: 10px 20px;
+}
+
+.subnav-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.subnav-item a:hover {
+  text-decoration: underline;
+}
+
+/* More Nav Items */
+.more-nav-item {
+  position: relative; /* Important for nested subnav */
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+/* Subnav for items inside More */
+.more-nav-item .subnav {
+  top: 0;
+  left: 100%; /* This ensures the subnav appears to the right */
+  white-space: nowrap;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 200;
+}
+
+/* Show subnav on hover of the More item */
+.more-nav-item:hover .subnav {
+  display: block;
+}
+
+.subnav-item, .more-nav-item:hover {
+  text-decoration: underline;
+}
+
+/* Styling for Toast icon */
+.toast-icon {
+  width: 116px;
+  height: 27px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.search-input {
+  width: 184px;
+  border-radius: 40px;
+  border: 1px solid #D6D7D9;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.login-button {
+  padding: 11px 24px;
+  border-radius: 40px;
+  background-color: #2B4FB9;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 16px;
+}
