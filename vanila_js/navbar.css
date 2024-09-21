@@ -1,0 +1,141 @@
+/* Main Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-family: SourceSansPro, sans-serif;
+    font-weight: 400;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.custom-community-header-logo img {
+    width: 116px;
+    height: 27px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+/* Navbar List Styles */
+.custom-community-header-navigation-v3 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.custom-community-header-navigation-v3 li {
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+    margin-left: 8px;
+    font-size: 10px;
+}
+
+/* Subnav (Dropdown Menu) Styles */
+.subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.subnav-item {
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+.subnav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.subnav-item a:hover {
+    color: #2B4FB9;
+}
+
+/* Show subnav on hover */
+.nav-item:hover .subnav,
+.more-nav-item:hover .subnav {
+    display: block;
+}
+
+/* More Nav Dropdown */
+.more-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+}
+
+/* More Nav Item Hover Behavior */
+.more-nav-item:hover .more-nav {
+    display: block;
+}
+
+/* Styling for the search input and login button */
+.search-input {
+    width: 184px;
+    border-radius: 40px;
+    border: 1px solid #D6D7D9;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.login-button {
+    padding: 11px 24px;
+    border-radius: 40px;
+    background-color: #2B4FB9;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/* Subnav positioning for regular nav items (BELOW) */
+.nav-item .subnav {
+    left: 0; /* Align the subnav directly below */
+    top: 100%; /* Position subnav just below the nav item */
+}
+
+/* Subnav positioning to appear BESIDE nav items inside More */
+.more-nav-item .subnav {
+    left: 100%;  /* Ensures subnav is to the right of the parent nav item */
+    top: 0;      /* Align subnav at the same height as the parent nav item */
+}
+
+/* Specific More Nav hover behavior */
+.more-nav-item:hover .subnav {
+    display: none;  /* Hide the subnav when hovering over More */
+}
+
+.more-nav-item:hover .more-nav {
+    display: block;  /* Only show more nav items */
+}
+
+/* Ensure More dropdown behaves correctly */
+.more-nav-item:hover > ul {
+    display: block;
+}
